@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +12,7 @@
   <title>Fiche coloc</title>
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
    <spring:url value="/resources/styleAccueil.css" var="mainCss" />
      <link href="${mainCss}" rel="stylesheet" />
 
@@ -33,7 +33,7 @@
       <nav >
         <ul>
              <li><a href="fiche">Chercher une colocation</a></li>
-            <li><a href="gestionColoc">Gérer ses colocations</a></li>
+            <li><a href="gestionColoc">GÃ©rer ses colocations</a></li>
             <li><a href="#">Se connecter</a></li>
             <li><a href="inscription">S'inscrire</a></li>
         </ul>
