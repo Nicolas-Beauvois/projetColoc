@@ -12,9 +12,11 @@
   <title>Fiche coloc</title>
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+
 <meta charset="ISO-8859-1">
   <link href="${pageContext.request.contextPath}/resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
   <link href="${pageContext.request.contextPath}/resources/styleFiche.css"  rel="stylesheet" type="text/css"/>
+
 
   <!-- Bootstrap core CSS -->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -31,10 +33,12 @@
     <div style="text-align: center">
       <nav >
         <ul>
+
    <li><a href="fiche"><button>Chercher une colocation</button></a></li>
             <li><a href="gestionColoc"><button>Gérer ses colocations</button></a></li>
             <li><a href="#"><button>Se connecter</button></a></li>
             <li><a href="inscription"><button>S'inscrire</button></a></li>
+
         </ul>
       </nav>
     </div>
