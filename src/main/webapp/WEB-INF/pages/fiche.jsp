@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
@@ -13,17 +13,16 @@
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <meta charset="ISO-8859-1">
-   <spring:url value="/resources/styleAccueil.css" var="mainCss" />
-     <link href="${mainCss}" rel="stylesheet" />
+  <link href="${pageContext.request.contextPath}/resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
+  <link href="${pageContext.request.contextPath}/resources/styleFiche.css"  rel="stylesheet" type="text/css"/>
 
   <!-- Bootstrap core CSS -->
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
 
-  <!-- Custom styles for this template -->
-  <link href="starter-template.css" rel="stylesheet">
 
-  <link href="styleAccueil.css" rel="stylesheet">
+
+
 
 </head>
 <body>
@@ -32,10 +31,10 @@
     <div style="text-align: center">
       <nav >
         <ul>
-             <li><a href="fiche">Chercher une colocation</a></li>
-            <li><a href="gestionColoc">G�rer ses colocations</a></li>
-            <li><a href="#">Se connecter</a></li>
-            <li><a href="inscription">S'inscrire</a></li>
+   <li><a href="fiche"><button>Chercher une colocation</button></a></li>
+            <li><a href="gestionColoc"><button>Gérer ses colocations</button></a></li>
+            <li><a href="#"><button>Se connecter</button></a></li>
+            <li><a href="inscription"><button>S'inscrire</button></a></li>
         </ul>
       </nav>
     </div>
@@ -46,21 +45,24 @@
     <div class="row">
       <div class="col-md-8 border cont"><h1>Informations sur la colocation</h1>
         <h1>Maison 1</h1>
-        <div class="resizepicture"><img src="images/picture.jpg" class="img-responsive imgresize landscape" alt="Maison" /></div><p><a href=""></a></p>
-        <div class="rounded proprietes">
-          <p>Lille</p>
-          <p>Prix/mois</p>
-          <p>100 m²</p>
-          <p>3 chambres</p>
-          <p>Du 01/04/2021 au 02/04/2021</p>
-          <p>Meublée : oui</p>
-          <p>Salle de bains equipée : oui</p>
+        <div class="resizepicture"><img src="${pageContext.request.contextPath}/images/mobilier.jpg" class="img-responsive imgresize landscape" alt="Maison" /></div><p><a href=""></a></p>
+        <div class="form">
+        <p style="font-weight:bold">Informations</p>
+        <ul>
+          <li>Lille</li>
+          <li>Prix/mois</li>
+          <li>100 m²</li>
+          <li>3 chambres</li>
+          <li>Du 01/04/2021 au 02/04/2021</li>
+          <li>Meublée : oui</li>
+          <li>Salle de bains equipéee : oui</li>
+          </ul>
         </div>
-        <p class="research-result">Une petite description de la maison, 3 chambres, salle de bains équipée, description blablablablablabla.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in finibus mi, ut vehicula nisi. Suspendisse eget blandit enim. Vivamus pulvinar fermentum est non vestibulum. Suspendisse potenti. Quisque rutrum dictum tellus quis vulputate. In hac habitasse platea dictumst. Nam placerat enim a luctus mattis. Aenean vel nisl elementum enim congue porta ut eu sapien. Vestibulum mollis lectus non ex vehicula, id elementum nisi vulputate. </p>
+        <p class="research-result form2">Une petite description de la maison, 3 chambres, salle de bains équipée, description blablablablablabla.</p>
+        <p class="form2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in finibus mi, ut vehicula nisi. Suspendisse eget blandit enim. Vivamus pulvinar fermentum est non vestibulum. Suspendisse potenti. Quisque rutrum dictum tellus quis vulputate. In hac habitasse platea dictumst. Nam placerat enim a luctus mattis. Aenean vel nisl elementum enim congue porta ut eu sapien. Vestibulum mollis lectus non ex vehicula, id elementum nisi vulputate. </p>
       </div>
       
-      <div class="col-md-4 border cont proprietaireformulaire">
+      <div class="col-md-4 border cont form2">
         <h3>Demander des informations au propriétaire</h3>
 
         <div class="mb-3">
@@ -85,11 +87,8 @@
 </div>
 
 
-<footer class="border-top">
-  <p class="text-center">
-    Site dévellopé par Mélissa Maerten, Rémy Deprez et Nicolas Beauvois, sur une idée originale de Yahya Abdellaoui
-  </p>
-  
+<footer class="footer">
+ <p class="text-center">Site dévellopé par Mélissa Maerten, Rémy Deprez et Nicolas Beauvois, sur une idée originale de Yahya Abdellaoui</p>
 </footer>
 
 

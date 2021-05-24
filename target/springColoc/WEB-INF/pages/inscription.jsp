@@ -1,12 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<meta charset="UTF-8">
 <title>Inscription</title>
 
-<meta charset="utf-8">
+<meta charset="uUTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
@@ -18,7 +19,8 @@
 
 
   <!-- Bootstrap core CSS -->
-    <link href="styleInscription.css" rel="stylesheet">
+      <spring:url value="/resources/styleInscription.css" var="mainCss" />
+     <link href="${mainCss}" rel="stylesheet" />
   <link href="bootstrap.css" rel="stylesheet">
 
 
@@ -32,7 +34,7 @@
  <nav >
         <ul>
             <li><a href="fiche">Chercher une colocation</a></li>
-            <li><a href="gestionColoc">Gérer ses colocations</a></li>
+            <li><a href="gestionColoc">GÃ©rer ses colocations</a></li>
             <li><a href="#">Se connecter</a></li>
             <li><a href="inscription">S'inscrire</a></li>
         </ul>
@@ -41,14 +43,14 @@
   <div class="container">
    <div class="col-md-12 border">
     <h1>Inscription</h1>
-    Création de compte locataire ou propriétaire
+    CrÃ©ation de compte locataire ou propriÃ©taire
     <form class="formulaire">
      
       <label for="nom" class="col-form-label">Nom</label><br>
       <input type="text" name="nom">
       <br>
 
-      <label for="nom" class="col-form-label">Prénom</label><br>        
+      <label for="nom" class="col-form-label">PrÃ©nom</label><br>        
       <input type="text" name="prenom">
       <br>
 
@@ -57,7 +59,7 @@
       <br>
 
 
-      <label for="nom" class="col-form-label">Numéro de téléphone</label><br>
+      <label for="nom" class="col-form-label">NumÃ©ro de tÃ©lÃ©phone</label><br>
       <input type="text" name="numerotelephone">
     <br>
 
@@ -68,7 +70,7 @@
       
       <label for="nom" class="col-form-label">Mot de passe</label><br>
       <input type="text" name="motdepasse">
-      <div class="form-text">Votre mot de passe doit faire entre 8 et 12 caractères.</div>
+      <div class="form-text">Votre mot de passe doit faire entre 8 et 12 caractÃ¨res.</div>
  
 
 
@@ -76,7 +78,7 @@
    
 
         
-      <label for="nom" class="col-form-label departement">Département</label>
+      <label for="nom" class="col-form-label departement">DÃ©partement</label>
       <select class="mdb-select">
           <option value="1">a</option>
           <option value="2">B</option>
@@ -93,7 +95,7 @@
 
       <input type="radio"  name="1"><label class="form-check-label">(Futur) colocataire !</label>
       <br>
-      <input type="radio" name="1"><label class="form-check-label">Propriétaire qui veut se faire de la thune !
+      <input type="radio" name="1"><label class="form-check-label">PropriÃ©taire qui veut se faire de la thune !
       </label>      
 </div>
 

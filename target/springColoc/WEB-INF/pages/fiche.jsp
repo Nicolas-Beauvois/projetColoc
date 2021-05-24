@@ -1,17 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.82.0">
-  <title>Starter Template · Bootstrap v5.0</title>
+  <title>Fiche coloc</title>
 
-
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<meta charset="ISO-8859-1">
+  <link href="${pageContext.request.contextPath}/resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
 
   <!-- Bootstrap core CSS -->
   <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +32,7 @@
       <nav >
         <ul>
              <li><a href="fiche">Chercher une colocation</a></li>
-            <li><a href="gestionColoc">G�rer ses colocations</a></li>
+            <li><a href="gestionColoc">Gérer ses colocations</a></li>
             <li><a href="#">Se connecter</a></li>
             <li><a href="inscription">S'inscrire</a></li>
         </ul>
@@ -47,18 +49,18 @@
         <div class="rounded proprietes">
           <p>Lille</p>
           <p>Prix/mois</p>
-          <p>100 m²</p>
+          <p>100 mÂ²</p>
           <p>3 chambres</p>
           <p>Du 01/04/2021 au 02/04/2021</p>
-          <p>Meublée : oui</p>
-          <p>Salle de bains equipée : oui</p>
+          <p>MeublÃ©e : oui</p>
+          <p>Salle de bains equipÃ©e : oui</p>
         </div>
-        <p class="research-result">Une petite description de la maison, 3 chambres, salle de bains équipée, description blablablablablabla.</p>
+        <p class="research-result">Une petite description de la maison, 3 chambres, salle de bains Ã©quipÃ©e, description blablablablablabla.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in finibus mi, ut vehicula nisi. Suspendisse eget blandit enim. Vivamus pulvinar fermentum est non vestibulum. Suspendisse potenti. Quisque rutrum dictum tellus quis vulputate. In hac habitasse platea dictumst. Nam placerat enim a luctus mattis. Aenean vel nisl elementum enim congue porta ut eu sapien. Vestibulum mollis lectus non ex vehicula, id elementum nisi vulputate. </p>
       </div>
       
       <div class="col-md-4 border cont proprietaireformulaire">
-        <h3>Demander des informations au propriétaire</h3>
+        <h3>Demander des informations au propriÃ©taire</h3>
 
         <div class="mb-3">
           <form>
@@ -84,7 +86,7 @@
 
 <footer class="border-top">
   <p class="text-center">
-    Site dévellopé par Mélissa Maerten, Rémy Deprez et Nicolas Beauvois, sur une idée originale de Yahya Abdellaoui
+    Site dÃ©vellopÃ© par MÃ©lissa Maerten, RÃ©my Deprez et Nicolas Beauvois, sur une idÃ©e originale de Yahya Abdellaoui
   </p>
   
 </footer>
