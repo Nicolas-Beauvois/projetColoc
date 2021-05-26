@@ -1,12 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<meta charset="ISO-8859-1">
-   <spring:url value="/resources/styleAccueil.css" var="mainCss" />
-     <link href="${mainCss}" rel="stylesheet" />
+
+<meta charset="UTF-8">
+  <link href="${pageContext.request.contextPath}/resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -21,10 +22,10 @@
 <div style="text-align: center">
     <nav >
         <ul>
-            <li><a href="fiche">Chercher une colocation</a></li>
-            <li><a href="gestionColoc">Gérer ses colocations</a></li>
-            <li><a href="#">Se connecter</a></li>
-            <li><a href="inscription">S'inscrire</a></li>
+            <li><a href="fiche"><button>Chercher une colocation</button></a></li>
+            <li><a href="gestionColoc"><button>GÃ©rer ses colocations</button></a></li>
+            <li><a href="#"><button>Se connecter</button></a></li>
+            <li><a href="inscription"><button>S'inscrire</button></a></li>
         </ul>
     </nav>
 </div>
@@ -39,16 +40,19 @@
         <div class="carousel-inner">
              
             <div class="carousel-item active">
-                <img src="https://pbs.twimg.com/media/EGHYvttU4AAYKb7?format=jpg&name=large" class="image-heigth" alt="...">
-                <h2 class="textPresentation">Trouvez la colocation de vos rêves<br>
-                Trouvez les locataires de vos rêves</h2>
+                <img src="${pageContext.request.contextPath}/images/caroussel1.jpg" class="image-heigth" alt="...">
+                <h2 class="textPresentation">Trouvez la colocation de vos rÃªves<br>
+                Trouvez les locataires de vos rÃªves</h2>
             </div>
             <div class="carousel-item">
-                <img src="https://pbs.twimg.com/media/EGHYvtkUcAAuc8T?format=jpg&name=large" class="d-block w-100" alt="...">
-
+                <img src="${pageContext.request.contextPath}/images/caroussel2.jpg" class="d-block w-100" alt="...">
+  <h2 class="textPresentation">Trouvez la colocation de vos rÃªves<br>
+                Trouvez les locataires de vos rÃªves</h2>
             </div>
             <div class="carousel-item">
-                <img src="https://pbs.twimg.com/media/EGHYvtjU0AAO8w1?format=jpg&name=large" class="d-block w-100" alt="...">
+                <img src="${pageContext.request.contextPath}/images/caroussel3.jpg" class="d-block w-100" alt="...">
+                  <h2 class="textPresentation">Trouvez la colocation de vos rÃªves<br>
+                Trouvez les locataires de vos rÃªves</h2>
             </div>
           
         </div>
@@ -70,15 +74,15 @@
                             <button class="button" type="button" >Trouver une colocation</button>
                       
                     
-                            <button class="button" type="button" >Gérer mes colocations</button>
+                            <button class="button" type="button" >GÃ©rer mes colocations</button>
 </section>
 
 
 
-
-</body>
-<footer>
-    <p class="text-center">Site dévellopé par Mélissa Maerten, Rémy Deprez et Nicolas Beauvois, sur une idée originale de Yahya Abdellaoui</p>
+<footer class="footerAcc" 	style="background-color : #f06347;">
+ <p class="text-center">Site dÃ©vellopÃ© par MÃ©lissa Maerten, RÃ©my Deprez et Nicolas Beauvois, sur une idÃ©e originale de Yahya Abdellaoui</p>
 </footer>
+</body>
+
 </body>
 </html>

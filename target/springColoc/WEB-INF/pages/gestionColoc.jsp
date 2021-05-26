@@ -1,12 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Gérer ses colocations</title>
-<link href="styleAccueil.css" rel="stylesheet" > 
-<link href="styleGestionColoc.css" rel="stylesheet" > 
+<meta charset="UTF-8">
+<title>GÃ©rer ses colocations</title>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<meta charset="UTF-8">
+  <link href="${pageContext.request.contextPath}/resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
+    <link href="${pageContext.request.contextPath}/resources/styleGestion.css"  rel="stylesheet" type="text/css"/>
+      
+      
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 
@@ -18,7 +22,7 @@
 <nav >
         <ul>
             <li><a href="fiche">Chercher une colocation</a></li>
-            <li><a href="gestionColoc">Gérer ses colocations</a></li>
+            <li><a href="gestionColoc">GÃ©rer ses colocations</a></li>
             <li><a href="#">Se connecter</a></li>
             <li><a href="inscription">S'inscrire</a></li>
         </ul>
@@ -28,12 +32,12 @@
 
 <body>
 
-<h1>Gérer mes colocations</h1>
+<h1>GÃ©rer mes colocations</h1>
 
 <div class="tabColoc">
 	
 
-<h3 style="text-align: center">Colocation n°1 </h3>
+<h3 style="text-align: center">Colocation nÂ°1 </h3>
 <img class="image" src="https://pbs.twimg.com/media/EGHYvttU4AAYKb7?format=jpg&name=large" " alt="...">
 
 <div class="infos">
@@ -56,7 +60,7 @@
 <div class="tabColoc">
 	
 
-<h3 style="text-align: center">Colocation n°1 </h3>
+<h3 style="text-align: center">Colocation nÂ°1 </h3>
 <img class="image" src="https://pbs.twimg.com/media/EGHYvttU4AAYKb7?format=jpg&name=large" " alt="...">
 
 <div class="infos">
@@ -74,7 +78,7 @@
 <div class="tabColoc">
 	
 
-<h3 style="text-align: center">Colocation n°1 </h3>
+<h3 style="text-align: center">Colocation nÂ°1 </h3>
 <img class="image" src="https://pbs.twimg.com/media/EGHYvttU4AAYKb7?format=jpg&name=large" " alt="...">
 
 <div class="infos">
@@ -92,7 +96,7 @@
 <div class="tabColoc">
 	
 
-<h3 style="text-align: center">Colocation n°1 </h3>
+<h3 style="text-align: center">Colocation nÂ°1 </h3>
 <img class="image" src="https://pbs.twimg.com/media/EGHYvttU4AAYKb7?format=jpg&name=large" " alt="...">
 
 <div class="infos">
@@ -109,5 +113,5 @@
 
 </body>
 
-<p class="text-center">Site dévellopé par Mélissa Maerten, Rémy Deprez et Nicolas Beauvois, sur une idée originale de Yahya Abdellaoui</p>
+<p class="text-center">Site dÃ©vellopÃ© par MÃ©lissa Maerten, RÃ©my Deprez et Nicolas Beauvois, sur une idÃ©e originale de Yahya Abdellaoui</p>
 </html>
