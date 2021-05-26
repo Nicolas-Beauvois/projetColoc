@@ -55,11 +55,11 @@ legend{
 	.footer {
 	background-color : #f06347;
 	position : relative;
-	margin-top : 50px;
 	width : 100%;
 	}
 	
 	.champ{
 	background-color : #f06347;
 	  border: solid #3b6e22  1px;
+	  margin-top : 50px;
 	}

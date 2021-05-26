@@ -32,15 +32,20 @@ public class IndexController {
 		return "gestionColoc";
 	}
 	
-//	@RequestMapping(path = "/hello", method  = { RequestMethod.GET, RequestMethod.POST })
-//	public ModelAndView helloStringMvcPage(@RequestParam(name="name") String name) {
-//	 
-//		ModelAndView model = new ModelAndView("index");
-//	
-//		model.addObject("message", name);
-//		
-//		return model;
-//	}
+	@RequestMapping(path = "/connexion", method  = RequestMethod.GET)
+	public String getConnexion() {
+		return "connexion";
+	}
+	
+	@RequestMapping(path = "/ajout", method  = RequestMethod.GET)
+	public String getAjout() {
+		return "ajout";
+	}
+	
+	@RequestMapping(path = "/modif", method  = RequestMethod.GET)
+	public String getModif() {
+		return "modif";
+	}
 	
 
 
