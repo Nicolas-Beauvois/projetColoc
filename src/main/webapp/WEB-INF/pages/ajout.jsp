@@ -7,40 +7,31 @@
 <head>
 
 <meta charset="UTF-8">
- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
    <link href="./resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
-    <link href="./resources/styleInscription.css"  rel="stylesheet" type="text/css"/>
+    <link href="./resources/styleAjout.css"  rel="stylesheet" type="text/css"/>
 
 
 
 <title>Ajout d'un bien</title>
 </head>
 <body>
-  <header >
-<div style="text-align: center">
-    <nav >
-        <ul>
-            <li><a href="fiche"><button>Chercher une colocation</button></a></li>
-            <li><a href="gestionColoc"><button>Gérer ses colocations</button></a></li>
-            <li><a href="#"><button>Se connecter</button></a></li>
-            <li><a href="inscription"><button>S'inscrire</button></a></li>
-        </ul>
-    </nav>
-</div>
 
+<header>
+<jsp:include page="header.jsp"></jsp:include> 
 </header>
 
-<body style="text-align : center">
+
 
 
  <div class="container" id="wrap">
 	  <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <form action="r" method="post" accept-charset="utf-8" class="form" role="form">   <legend >Ajouter</legend>
-                    <h4 class="champ">Ajouter une colocation</h4>
+            <form action="r" method="post" accept-charset="utf-8" class="form" role="form">  
+                    <h2 class="champ">Ajouter une colocation</h2>
                     
                         
                             <input type="text" name="name" value="" class="form-control input-lg" placeholder="Intitulé"  />                        
@@ -66,7 +57,7 @@
                     <input type="text" name="rent" value="" class="form-control input-lg" placeholder="Loyer"  /> 
                 
                      
-                    <div class="champ">
+                    <div class="champ" style="margin-bottom:10px">
                      <label >Meublé ? : </label>                    <label class=" radio-inline">
                         <input type="radio" name="type" value="equipped" id=equipped />                       Oui
                     </label>
@@ -94,8 +85,9 @@
 </div>
 
 
-<footer class="footer" 	style="background-color : #f06347;">
- <p class="text-center">Site dévellopé par Mélissa Maerten, Rémy Deprez et Nicolas Beauvois, sur une idée originale de Yahya Abdellaoui</p>
+  <footer class="footer">
+<jsp:include page="footer.jsp"></jsp:include> 
+
 </footer>
 
 

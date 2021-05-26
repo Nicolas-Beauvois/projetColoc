@@ -19,17 +19,7 @@
 </head>
 <body>
   <header >
-<div style="text-align: center">
-    <nav >
-        <ul>
-            <li><a href="fiche"><button>Chercher une colocation</button></a></li>
-            <li><a href="gestionColoc"><button>Gérer ses colocations</button></a></li>
-            <li><a href="#"><button>Se connecter</button></a></li>
-            <li><a href="inscription"><button>S'inscrire</button></a></li>
-        </ul>
-    </nav>
-</div>
-
+<jsp:include page="header.jsp"></jsp:include> 
 </header>
 
 
@@ -70,17 +60,18 @@
 
  <section class="search-sec">
    
-                            
+                            <!-- Le bouton mènera sur la page "liste" -->
                             <button class="button" type="button" >Trouver une colocation</button>
                       
                     
-                            <button class="button" type="button" >Gérer mes colocations</button>
+                            <a href="gestionColoc"><button class="button" type="button" style="color: black">Gérer mes colocations</button></a>
 </section>
 
 
 
-<footer class="footerAcc" 	style="background-color : #f06347;">
- <p class="text-center">Site dévellopé par Mélissa Maerten, Rémy Deprez et Nicolas Beauvois, sur une idée originale de Yahya Abdellaoui</p>
+  <footer class="footerAcc">
+<jsp:include page="footer.jsp"></jsp:include> 
+
 </footer>
 </body>
 

@@ -13,8 +13,8 @@
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <meta charset="ISO-8859-1">
-  <link href="${pageContext.request.contextPath}/resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
-  <link href="${pageContext.request.contextPath}/resources/styleFiche.css"  rel="stylesheet" type="text/css"/>
+  <link href="./resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
+  <link href="./resources/styleFiche.css"  rel="stylesheet" type="text/css"/>
 
   <!-- Bootstrap core CSS -->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -28,38 +28,31 @@
 <body>
 
   <header >
-    <div style="text-align: center">
-      <nav >
-        <ul>
-   <li><a href="fiche"><button>Chercher une colocation</button></a></li>
-            <li><a href="gestionColoc"><button>Gérer ses colocations</button></a></li>
-            <li><a href="#"><button>Se connecter</button></a></li>
-            <li><a href="inscription"><button>S'inscrire</button></a></li>
-        </ul>
-      </nav>
-    </div>
+<jsp:include page="header.jsp"></jsp:include> 
+</header>
 
-  </header>
-
-  <div class="container">
+  <div class="container" style="background-color:#f2f5f3">
     <div class="row">
-      <div class="col-md-8 border cont"><h1>Informations sur la colocation</h1>
-        <h1>Maison 1</h1>
-        <div class="resizepicture"><img src="${pageContext.request.contextPath}/images/mobilier.jpg" class="img-responsive imgresize landscape" alt="Maison" /></div><p><a href=""></a></p>
+      <div class="col-md-8 border cont"><h1>Informations sur la colocation Maison 1</h1>
+        
+        <div class="alignPhoto">
+        <div class="resizepicture" style="margin : 10px 20px"><img src="${pageContext.request.contextPath}/images/mobilier.jpg" class="img-responsive imgresize landscape" alt="Maison" /></div><p><a href=""></a></p>
+        <div class="resizepicture" style="margin : 10px 20px"><img src="${pageContext.request.contextPath}/images/mobilier.jpg" class="img-responsive imgresize landscape" alt="Maison" /></div><p><a href=""></a></p>
         <div class="form">
         <p style="font-weight:bold">Informations</p>
         <ul>
-          <li>Lille</li>
-          <li>Prix/mois</li>
-          <li>100 m²</li>
+          <li>Ville : Lille</li>
+          <li>Loyer : 500 euros/mois</li>
+          <li>Superficie : 100 m²</li>
           <li>3 chambres</li>
-          <li>Du 01/04/2021 au 02/04/2021</li>
           <li>Meublée : oui</li>
-          <li>Salle de bains equipéee : oui</li>
+        
           </ul>
         </div>
-        <p class="research-result form2">Une petite description de la maison, 3 chambres, salle de bains équipée, description blablablablablabla.</p>
-        <p class="form2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in finibus mi, ut vehicula nisi. Suspendisse eget blandit enim. Vivamus pulvinar fermentum est non vestibulum. Suspendisse potenti. Quisque rutrum dictum tellus quis vulputate. In hac habitasse platea dictumst. Nam placerat enim a luctus mattis. Aenean vel nisl elementum enim congue porta ut eu sapien. Vestibulum mollis lectus non ex vehicula, id elementum nisi vulputate. </p>
+       </div>
+      
+        <p class="research-result formP">Une petite description de la maison, 3 chambres, salle de bains équipée, description blablablablablabla.</p>
+        <p class="formP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in finibus mi, ut vehicula nisi. Suspendisse eget blandit enim. Vivamus pulvinar fermentum est non vestibulum. Suspendisse potenti. Quisque rutrum dictum tellus quis vulputate. In hac habitasse platea dictumst. Nam placerat enim a luctus mattis. Aenean vel nisl elementum enim congue porta ut eu sapien. Vestibulum mollis lectus non ex vehicula, id elementum nisi vulputate. </p>
       </div>
       
       <div class="col-md-4 border cont form2">
@@ -87,8 +80,9 @@
 </div>
 
 
-<footer class="footer">
- <p class="text-center">Site dévellopé par Mélissa Maerten, Rémy Deprez et Nicolas Beauvois, sur une idée originale de Yahya Abdellaoui</p>
+  <footer class="footer">
+<jsp:include page="footer.jsp"></jsp:include> 
+
 </footer>
 
 

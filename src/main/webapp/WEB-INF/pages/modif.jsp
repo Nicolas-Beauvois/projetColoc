@@ -7,30 +7,20 @@
 <head>
 
 <meta charset="UTF-8">
- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
    <link href="./resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
-    <link href="./resources/styleInscription.css"  rel="stylesheet" type="text/css"/>
+    <link href="./resources/styleAjout.css"  rel="stylesheet" type="text/css"/>
 
 
 
 <title>Modifier un  bien</title>
 </head>
 <body>
-  <header >
-<div style="text-align: center">
-    <nav >
-        <ul>
-            <li><a href="fiche"><button>Chercher une colocation</button></a></li>
-            <li><a href="gestionColoc"><button>Gérer ses colocations</button></a></li>
-            <li><a href="connexion"><button>Se connecter</button></a></li>
-            <li><a href="inscription"><button>S'inscrire</button></a></li>
-        </ul>
-    </nav>
-</div>
-
+<header >
+<jsp:include page="header.jsp"></jsp:include> 
 </header>
 
 <body style="text-align : center">
@@ -94,10 +84,10 @@
 </div>
 
 
-<footer class="footer" 	style="background-color : #f06347;">
- <p class="text-center">Site dévellopé par Mélissa Maerten, Rémy Deprez et Nicolas Beauvois, sur une idée originale de Yahya Abdellaoui</p>
-</footer>
+  <footer class="footer">
+<jsp:include page="footer.jsp"></jsp:include> 
 
+</footer>
 
 </body>
 </html>

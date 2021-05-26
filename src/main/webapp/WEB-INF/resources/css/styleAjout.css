@@ -1,19 +1,19 @@
+body {
+	background : linear-gradient(#f5937f,#f5937f);
+}
+
 #wrap{
-background-color:rgba(0, 0, 0, 0.5);
+ background-color: #f2f5f3;
 background-repeat: no-repeat;
 background-attachment: fixed;
 
 margin-top : 80px;
 margin-left : 200px;
-
+margin-bottom : 30px;
+padding-bottom : 15px;
 
 }
-legend{
-	color:#141823;
-	font-size:25px;
-	font-weight:bold;
-	background-color : #f06347;
-}
+
 .signup-btn {
   background: #f06347;
 
@@ -33,15 +33,11 @@ legend{
 }
 
 
-.navbar-default .navbar-brand{
-		color:#fff;
-		font-size:30px;
-		font-weight:bold;
-	}
+
 .form .form-control { margin-bottom: 10px; }
 @media (min-width:768px) {
 	#home{
-		margin-top:50px;
+		
 		opacity: 0.33;
 	}
 	#home .slogan{
@@ -56,10 +52,15 @@ legend{
 	background-color : #f06347;
 	position : relative;
 	width : 100%;
+
 	}
 	
 	.champ{
-	background-color : #f06347;
-	  border: solid #3b6e22  1px;
-	  margin-top : 50px;
+   background-color: #f2f5f3;
+	
+	   -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px
+	 
 	}

@@ -17,6 +17,11 @@ public class IndexController {
 		return "accueil";
 	}
 	
+	@RequestMapping(path = "/accueil", method  = RequestMethod.GET)
+	public String getAccueil() {
+		return "accueil";
+	}
+	
 	@RequestMapping(path = "/inscription", method  = RequestMethod.GET)
 	public String getInscription() {
 		return "inscription";
@@ -45,6 +50,11 @@ public class IndexController {
 	@RequestMapping(path = "/modif", method  = RequestMethod.GET)
 	public String getModif() {
 		return "modif";
+	}
+	
+	@RequestMapping(path = "/messagerie", method  = RequestMethod.GET)
+	public String getMessagerie() {
+		return "messagerie";
 	}
 	
 

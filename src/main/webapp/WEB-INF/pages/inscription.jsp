@@ -11,41 +11,29 @@
  
   <title>Inscription</title>
 
- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
    
-    <link href="${pageContext.request.contextPath}/resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
-    <link href="${pageContext.request.contextPath}/resources/styleInscription.css"  rel="stylesheet" type="text/css"/>
+    <link href="./resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
+    <link href="./resources/styleInscription.css"  rel="stylesheet" type="text/css"/>
 
 <style>
-body{
-	background-image: url("${pageContext.request.contextPath}/images/friendss.jpg") ;
-  height: 100%;
 
-  background-position: center;
-  
-  background-size: cover;
-}
 </style>
 </head>
 
-<body style="text-align : center">
+<body>
 
- <nav >
-        <ul>
-        <li><a href="fiche"><button>Chercher une colocation</button></a></li>
-            <li><a href="gestionColoc"><button>Gérer ses colocations</button></a></li>
-            <li><a href="#"><button>Se connecter</button></a></li>
-            <li><a href="inscription"><button>S'inscrire</button></a></li>
-        </ul>
-    </nav>
+<header >
+<jsp:include page="header.jsp"></jsp:include> 
+</header>
 
  <div class="container" id="wrap">
 	  <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <form action="r" method="post" accept-charset="utf-8" class="form" role="form">   <legend >Inscription</legend>
+            <form action="r" method="post" accept-charset="utf-8" class="form" role="form">   
                     <h4 class="champ">Créez votre compte</h4>
                     <div class="row">
                         <div class="col-xs-6 col-md-6">
@@ -196,8 +184,9 @@ body{
 </div>
 
 
-<footer class="footer">
- <p class="text-center">Site dévellopé par Mélissa Maerten, Rémy Deprez et Nicolas Beauvois, sur une idée originale de Yahya Abdellaoui</p>
+  <footer class="footer">
+<jsp:include page="footer.jsp"></jsp:include> 
+
 </footer>
 </body>
 </html>

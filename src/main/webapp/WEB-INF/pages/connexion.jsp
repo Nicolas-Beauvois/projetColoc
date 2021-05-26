@@ -7,42 +7,29 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <link href="${pageContext.request.contextPath}/resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
-  <link href="${pageContext.request.contextPath}/resources/styleConnexion.css"  rel="stylesheet" type="text/css"/>
+  <link href="./resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
+  <link href="./resources/styleConnexion.css"  rel="stylesheet" type="text/css"/>
 <meta charset="ISO-8859-1">
 <title>Connexion</title>
 
 <style>
 body{
-	background-image: url("${pageContext.request.contextPath}/images/friendss.jpg") ;
-  height: 100%;
+	background : linear-gradient(#f5937f,#f5937f);
 
- 
-  
-  background-size: cover;
 }
 </style>
 </head>
 <body>
 
   <header >
-<div style="text-align: center">
-    <nav >
-        <ul>
-            <li><a href="fiche"><button>Chercher une colocation</button></a></li>
-            <li><a href="gestionColoc"><button>Gérer ses colocations</button></a></li>
-            <li><a href="#"><button>Se connecter</button></a></li>
-            <li><a href="inscription"><button>S'inscrire</button></a></li>
-        </ul>
-    </nav>
-</div>
-
+<jsp:include page="header.jsp"></jsp:include> 
 </header>
-<h1>Se connecter</h1>
+
 <div class="wrapper">
+
   <div id="formContent">
     <!-- Tabs Titles -->
-
+<h1 style="margin-left : 100px">Connexion</h1>
     <!-- Icon -->
     <div>
       <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
@@ -57,14 +44,15 @@ body{
 
     <!-- Remind Passowrd -->
     <div id="formFooter">
-      <a href="#">Forgot Password?</a>
+      <a href="#">Mot de passe oublié ?</a>
     </div>
 
   </div>
   </div>
   
   <footer class="footer">
- <p class="text-center">Site dévellopé par Mélissa Maerten, Rémy Deprez et Nicolas Beauvois, sur une idée originale de Yahya Abdellaoui</p>
+<jsp:include page="footer.jsp"></jsp:include> 
+
 </footer>
 </body>
 </html>

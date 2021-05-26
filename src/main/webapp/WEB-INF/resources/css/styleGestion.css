@@ -6,6 +6,19 @@
     padding-left: 0;
     margin-bottom: 0;
 }
+ .h1{
+ margin-left : 500px;
+-webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+     background-color: #f2f5f3;
+     width: 90%;
+  max-width: 450px;
+ }
+ 
+ body {
+	background : linear-gradient(#f5937f,#f5937f);
+}
+
 .thumbnail
 {
     margin-bottom: 30px;

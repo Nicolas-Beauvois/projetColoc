@@ -20,25 +20,19 @@ $(document).ready(function() {
 });</script>
 <!------ Include the above in your HEAD tag ---------->
 </head>
-<header>
-<div style= "text-align:center" >
-<nav >
-        <ul >
-        <li><a href="fiche"><button>Chercher une colocation</button></a></li>
-            <li><a href="gestionColoc"><button>Gérer ses colocations</button></a></li>
-            <li><a href="#"><button>Se connecter</button></a></li>
-            <li><a href="inscription"><button>S'inscrire</button></a></li>
-        </ul>
-    </nav>
-    </div>
+<header >
+<jsp:include page="header.jsp"></jsp:include> 
 </header>
 
 <body>
 
-<h1>Gestion de vos colocations</h1>
+<div class="h1">
+ <h1 >Gestion de vos colocations</h1>
+ </div>
 
 <div class="container">
     <div class="row">
+   
         <div class="col-lg-12 my-3">
             <div class="pull-right">
                 <div class="btn-group">
@@ -193,8 +187,9 @@ $(document).ready(function() {
                 </div>
             </div>
 </div>
-<footer class="footer">
- <p class="text-center" style="background-color : #f06347">Site dévellopé par Mélissa Maerten, Rémy Deprez et Nicolas Beauvois, sur une idée originale de Yahya Abdellaoui</p>
+  <footer class="footer">
+<jsp:include page="footer.jsp"></jsp:include> 
+
 </footer>
 </body>
 
