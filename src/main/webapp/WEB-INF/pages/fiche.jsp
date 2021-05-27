@@ -12,9 +12,11 @@
   <title>Fiche coloc</title>
 
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+
 <meta charset="ISO-8859-1">
   <link href="./resources/styleAccueil.css"  rel="stylesheet" type="text/css"/>
   <link href="./resources/styleFiche.css"  rel="stylesheet" type="text/css"/>
+
 
   <!-- Bootstrap core CSS -->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -28,16 +30,20 @@
 <body>
 
   <header >
+
 <jsp:include page="header.jsp"></jsp:include> 
 </header>
+
+  
+
 
   <div class="container" style="background-color:#f2f5f3">
     <div class="row">
       <div class="col-md-8 border cont"><h1>Informations sur la colocation Maison 1</h1>
         
         <div class="alignPhoto">
-        <div class="resizepicture" style="margin : 10px 20px"><img src="${pageContext.request.contextPath}/images/mobilier.jpg" class="img-responsive imgresize landscape" alt="Maison" /></div><p><a href=""></a></p>
-        <div class="resizepicture" style="margin : 10px 20px"><img src="${pageContext.request.contextPath}/images/mobilier.jpg" class="img-responsive imgresize landscape" alt="Maison" /></div><p><a href=""></a></p>
+        <div class="resizepicture" style="margin : 10px 20px"><img src="./images/mobilier.jpg" class="img-responsive imgresize landscape" alt="Maison" /></div><p><a href=""></a></p>
+        <div class="resizepicture" style="margin : 10px 20px"><img src="./images/mobilier.jpg" class="img-responsive imgresize landscape" alt="Maison" /></div><p><a href=""></a></p>
         <div class="form">
         <p style="font-weight:bold">Informations</p>
         <ul>
